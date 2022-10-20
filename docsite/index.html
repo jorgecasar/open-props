@@ -1408,13 +1408,13 @@
                 html {
                   --brand-light: var(--orange-6);
 
-                  --text1-light: var(--gray-8);
-                  --text2-light: var(--gray-7);
+                  --text-1-light: var(--gray-8);
+                  --text-2-light: var(--gray-7);
 
-                  --surface1-light: var(--gray-2);
-                  --surface2-light: var(--gray-0);
-                  --surface3-light: var(--gray-1);
-                  --surface4-light: var(--gray-3);
+                  --surface-1-light: var(--gray-2);
+                  --surface-2-light: var(--gray-0);
+                  --surface-3-light: var(--gray-1);
+                  --surface-4-light: var(--gray-3);
                 }
               </code></pre>
             </div>
@@ -1424,13 +1424,13 @@
                 html {
                   --brand-dark: var(--orange-3);
 
-                  --text1-dark: var(--gray-1);
-                  --text2-dark: var(--gray-3);
+                  --text-1-dark: var(--gray-1);
+                  --text-2-dark: var(--gray-3);
 
-                  --surface1-dark: var(--gray-9);
-                  --surface2-dark: var(--gray-8);
-                  --surface3-dark: var(--gray-7);
-                  --surface4-dark: var(--gray-6);
+                  --surface-1-dark: var(--gray-9);
+                  --surface-2-dark: var(--gray-8);
+                  --surface-3-dark: var(--gray-7);
+                  --surface-4-dark: var(--gray-6);
                 }
               </code></pre>
             </div>
@@ -1440,13 +1440,13 @@
                 html {
                   --brand-dim: var(--orange-4);
 
-                  --text1-dim: var(--gray-3);
-                  --text2-dim: var(--gray-4);
+                  --text-1-dim: var(--gray-3);
+                  --text-2-dim: var(--gray-4);
 
-                  --surface1-dim: var(--gray-8);
-                  --surface2-dim: var(--gray-7);
-                  --surface3-dim: var(--gray-6);
-                  --surface4-dim: var(--gray-5);
+                  --surface-1-dim: var(--gray-8);
+                  --surface-2-dim: var(--gray-7);
+                  --surface-3-dim: var(--gray-6);
+                  --surface-4-dim: var(--gray-5);
                 }
               </code></pre>
             </div>
@@ -1456,13 +1456,13 @@
                 html {
                   --brand-grape: var(--grape-5);
 
-                  --text1-grape: var(--grape-9);
-                  --text2-grape: var(--grape-7);
+                  --text-1-grape: var(--grape-9);
+                  --text-2-grape: var(--grape-7);
 
-                  --surface1-grape: var(--grape-0);
-                  --surface2-grape: var(--grape-1);
-                  --surface3-grape: var(--grape-2);
-                  --surface4-grape: var(--grape-3);
+                  --surface-1-grape: var(--grape-0);
+                  --surface-2-grape: var(--grape-1);
+                  --surface-3-grape: var(--grape-2);
+                  --surface-4-grape: var(--grape-3);
                 }
               </code></pre>
             </div>
@@ -1480,13 +1480,13 @@
                 :root {
                   --brand: var(--brand-light);
 
-                  --text1: var(--text1-light);
-                  --text2: var(--text2-light);
+                  --text-1: var(--text-1-light);
+                  --text-2: var(--text-2-light);
 
-                  --surface1: var(--surface1-light);
-                  --surface2: var(--surface2-light);
-                  --surface3: var(--surface3-light);
-                  --surface4: var(--surface4-light);
+                  --surface-1: var(--surface-1-light);
+                  --surface-2: var(--surface-2-light);
+                  --surface-3: var(--surface-3-light);
+                  --surface-4: var(--surface-4-light);
                 }
               </code></pre>
             </div>
@@ -1497,149 +1497,9 @@
                   :root {
                     --brand: var(--brand-dark);
 
-                    --text1: var(--text1-dark);
-                    --text2: var(--text2-dark);
+                    --text-1: var(--text-1-dark);
+                    --text-2: var(--text-2-dark);
 
-                    --surface1: var(--surface1-dark);
-                    --surface2: var(--surface2-dark);
-                    --surface3: var(--surface3-dark);
-                    --surface4: var(--surface4-dark);
-                  }
-                }
-              </code></pre>
-            </div>
-            <div>
-              <h5>Prefers Dim</h5>
-              <pre class="language-css"><code>
-                @media (prefers-contrast: less) {
-                  :root {
-                    --brand: var(--brand-dim);
-
-                    --text1: var(--text1-dim);
-                    --text2: var(--text2-dim);
-
-                    --surface1: var(--surface1-dim);
-                    --surface2: var(--surface2-dim);
-                    --surface3: var(--surface3-dim);
-                    --surface4: var(--surface4-dim);
-                  }
-                }
-              </code></pre>
-            </div>
-
-            <div>
-              <h5>Prefers Grape</h5>
-              <pre class="language-css"><code>
-                [color-scheme="grape"] {
-                  --brand: var(--brand-grape);
-
-                  --text1: var(--text1-grape);
-                  --text2: var(--text2-grape);
-
-                  --surface1: var(--surface1-grape);
-                  --surface2: var(--surface2-grape);
-                  --surface3: var(--surface3-grape);
-                  --surface4: var(--surface4-grape);
-                }
-              </code></pre>
-            </div>
-          </div>
-
-          <header>
-            <h3>3) Using the aliases</h3>
-            <p>Your app is now free to use adaptive custom properties! Now, your team only needs to remember a single naming convention rather than wrestling with individual theming variables. Here are a few examples of how the above color theme system could be used.</p>
-          </header>
-          
-          <div class="block-wrap">
-            <div>
-              <h5>Page Styles Using Themes</h5>
-              <pre class="language-css"><code>
-                html {
-                  background-color: var(--surface1);
-                  color: var(--text1);
-                  accent-color: var(--link);
-                }
-              </code></pre>
-            </div>
-            <div>
-              <h5>Utilities</h5>
-              <pre class="language-css"><code>
-                .surface1 {
-                  background-color: var(--surface1);
-                  color: var(--text2);
-                }
-
-                .surface2 {
-                  background-color: var(--surface2);
-                  color: var(--text2);
-                }
-
-                .surface3 {
-                  background-color: var(--surface3);
-                  color: var(--text1);
-                }
-
-                .surface4 {
-                  background-color: var(--surface4);
-                  color: var(--text1);
-                }
-              </code></pre>
-            </div>
-            <div>
-              <h5>Typography</h5>
-              <pre class="language-css"><code>
-                h1,h2,h3,h4,p,dt {
-                  color: var(--text1);
-                }
-
-                h5,h6,small,dd {
-                  color: var(--text2); 
-                }
-              </code></pre>
-            </div>
-          </div>
-        </div>
-      </details>
-    </section>
-
-    <section id="gradients" class="just-stretch">
-      <header>
-        <h2>Gradients</h2>
-        <p>Open Props includes 30 handcrafted gradients. Linear gradient direction can be changed with a custom property mixin.</p>
-        <p>Don't miss the noise props inspired by <a href="https://grainy-gradients.vercel.app">grainy-gradients</a>.</p>
-      </header>
-
-      <div class="block-wrap">
-        <div>
-          <h5>The Props</h5>
-          <div class="var-examples">
-            <pre class="language-css"><code>
-              --gradient-{0-30}
-            </code></pre>
-          </div>
-        </div>
-        <div>
-          <h5>Hero Header Sample</h5>
-          <pre class="language-css"><code>
-            header {
-              background-image: var(--gradient-5);
-
-              @media (--OSdark) {
-                background-image: var(--gradient-15);
-              }
-            }
-          </code></pre>
-        </div>
-        <div>
-          <h5>Gradient Text Sample</h5>
-          <pre class="language-css"><code>
-            .gradient-text {
-              background: var(--gradient-1);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-          </code></pre>
-        </div>
       </div>
       <article class="just-stretch just-for-gap">
         <h4>Gradients</h4>
